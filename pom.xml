@@ -74,8 +74,8 @@
             </activation>
             <properties>
                <sonar.host.url>https://sonar-cicd-tutorial.apps.cluster-nb28m.nb28m.sandbox1775.opentlc.com</sonar.host.url>
-	       <sonar.login>sqa_e1481eec83a4097995d64153131ef292ade52899</sonar.login>
-               <sonar.projectName>cicd</sonar.projectName>
+	       <sonar.login>sqa_856f2981b665136c3f0a43948d590c6ed4de9b97</sonar.login>
+               <sonar.projectName>tekton</sonar.projectName>
                <sonar.projectVersion>main</sonar.projectVersion>
                <sonar.exclusions>**/*.java</sonar.exclusions>
             </properties>
