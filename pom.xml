@@ -122,11 +122,11 @@
 	<distributionManagement>
         	<snapshotRepository>
           		<id>sachin-snap</id>
-          		<url>http://nexus-java-sonar-nexus.apps.cluster-mz8m9.mz8m9.sandbox2638.opentlc.com/repository/sumit-snap1/</url>
+          		<url>http://nexus-argocd-pipeline.apps.cluster-t9vdh.t9vdh.sandbox2832.opentlc.com/repository/sachin-snap/</url>
         	</snapshotRepository>
         	<repository>
           		<id>sachin-snap</id>
-          		<url>http://nexus-java-sonar-nexus.apps.cluster-mz8m9.mz8m9.sandbox2638.opentlc.com/repository/sumit-snap1/</url>
+          		<url>http://nexus-argocd-pipeline.apps.cluster-t9vdh.t9vdh.sandbox2832.opentlc.com/repository/sachin-snap/</url>
         	</repository>
       
     	</distributionManagement>
