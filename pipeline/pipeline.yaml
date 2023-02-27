@@ -15,14 +15,12 @@ spec:
     # - name: kn-service-name
     #   description: The Knative Service name
     #   default: myservice
-    - name: APP_NAME
-      type: string
     - name: github-repo-url
       description: The GitHub Repo of the Java Application
       default: https://github.com/sachinayyar/tekton-spring-boot
     - name: github-repo-revision
       description: The GitHub revision to use
-      default: master
+      default: main
   workspaces:
     - name: source
     - name: maven-settings 
