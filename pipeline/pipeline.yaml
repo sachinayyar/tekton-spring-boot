@@ -43,7 +43,25 @@ spec:
         - name: output
           workspace: source
           
-          # TASK 02 MAVEN TEST
+          # TASK 02 SONARQUBE
+          
+    - name: sonar-maven
+      params:
+        - name: GOALS
+          value:
+            - 'sonar:sonar'
+      runAfter:
+        - clone-sources
+      taskRef:
+        kind: ClusterTask
+        name: maven
+      workspaces:
+        - name: source
+          workspace: pvc
+        - name: maven-settings
+          workspace: pvc
+          
+          # TASK 03 MAVEN TEST
           
     - name: mvn-test
       taskRef:
@@ -60,7 +78,7 @@ spec:
         - name: source
           workspace: source
           
-          # TASK 03 MAVEN-PACKAGE
+          # TASK 04 MAVEN-PACKAGE
           
     - name: mvn-package
       taskRef:
@@ -77,7 +95,7 @@ spec:
         - name: source
           workspace: source
           
-          # TASK 04 BUILDING IMAGE USING BUILDAH CLUSTER TASK
+          # TASK 05 BUILDING IMAGE USING BUILDAH CLUSTER TASK
           
           
     - name: buildah-image
