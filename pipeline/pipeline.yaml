@@ -20,7 +20,8 @@ spec:
       default: main
   workspaces:
     - name: source
-    - name: maven-settings 
+    - name: maven-settings
+    - name: workspace
     
     # TASK 01 GIT-CLONE
     
@@ -111,4 +112,26 @@ spec:
           workspace: source
           
           
-  
+          # TASK 06 GIT UPDATE KUSTOMIZATION FILE
+    
+    
+    - name: git-update-deployment
+      params:
+        - name: GIT_REPOSITORY
+          value: 'https://github.com/sachinayyar/tekton-spring-boot-config.git'
+        - name: CURRENT_IMAGE
+          value: quay.io/sachinayyar/tekton-argocd
+        - name: NEW_IMAGE
+          value: 'quay.io/sachinayyar/tekton-argocd:latest'
+        - name: NEW_DIGEST
+          value: $(tasks.buildah-image.results.IMAGE_DIGEST)
+        - name: KUSTOMIZATION_PATH
+          value: k8s/
+      runAfter:
+        - buildah-image
+      taskRef:
+        kind: Task
+        name: git-update-deployment
+      workspaces:
+        - name: workspace
+          workspace: workspace
