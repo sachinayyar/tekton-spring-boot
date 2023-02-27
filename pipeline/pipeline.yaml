@@ -4,7 +4,7 @@ metadata:
   name: pipeline-git-sonar-mvn-buildah
 spec:
   description: >-
-    The Pipline to build and deploy the Java App as Knative Service.
+    The Pipline to build and deploy the Java App.
     
     # PARAMETERS
     
@@ -12,9 +12,6 @@ spec:
     - name: image-name
       description: The fully qualified image name 
       default: 'quay.io/sachinayyar/tekton-argocd'
-    # - name: kn-service-name
-    #   description: The Knative Service name
-    #   default: myservice
     - name: github-repo-url
       description: The GitHub Repo of the Java Application
       default: https://github.com/sachinayyar/tekton-spring-boot
