@@ -42,21 +42,21 @@ spec:
           
           # TASK 02 SONARQUBE
           
-    - name: sonar-maven
+    - name: sonar
       params:
         - name: GOALS
           value:
             - 'sonar:sonar'
       runAfter:
-        - clone-sources
+        - git-clone
       taskRef:
         kind: ClusterTask
         name: maven
       workspaces:
         - name: source
-          workspace: pvc
+          workspace: source
         - name: maven-settings
-          workspace: pvc
+          workspace: source
           
           # TASK 03 MAVEN TEST
           
@@ -65,7 +65,7 @@ spec:
         name: maven
         kind: ClusterTask        
       runAfter:
-        - git-clone
+        - sonar
       params:
         - name: GOALS
           value: ['-B', 'clean', 'test']
