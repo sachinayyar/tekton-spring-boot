@@ -16,9 +16,9 @@
   
   <mirrors>
     <mirror>
-      <id>sachin-host</id>
+      <id>sachin-proxy</id>
       <mirrorOf>*</mirrorOf>
-      <url>http://nexus-argocd-pipeline.apps.cluster-vlbrg.vlbrg.sandbox2049.opentlc.com/repository/sachin-host/</url>
+      <url>http://nexus-argocd-pipeline.apps.cluster-vlbrg.vlbrg.sandbox2049.opentlc.com/repository/sachin-proxy/</url>
     </mirror>
   </mirrors>
   <profiles>
