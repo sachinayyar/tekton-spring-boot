@@ -80,8 +80,8 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-               <sonar.host.url>https://sonar-argocd-pipeline.apps.cluster-t9vdh.t9vdh.sandbox2832.opentlc.com</sonar.host.url>
-	       <sonar.login>sqa_f347b8d767d28815dc07a94a509cc4d428843f07</sonar.login>
+               <sonar.host.url>https://sonar-argocd-pipeline.apps.cluster-vlbrg.vlbrg.sandbox2049.opentlc.com</sonar.host.url>
+	       <sonar.login>sqa_ded9e2edb068a10f70d9d0abeafd68b720a2cfef</sonar.login>
                <sonar.projectName>tekton</sonar.projectName>
                <sonar.projectVersion>main</sonar.projectVersion>
                <sonar.exclusions>**/*.java</sonar.exclusions>
