@@ -16,9 +16,9 @@
   
   <mirrors>
     <mirror>
-      <id>sachin-proxy</id>
+      <id>sachin-host</id>
       <mirrorOf>*</mirrorOf>
-      <url>http://nexus-argocd-pipeline.apps.cluster-t9vdh.t9vdh.sandbox2832.opentlc.com/repository/sachin-proxy/</url>
+      <url>http://nexus-argocd-pipeline.apps.cluster-vlbrg.vlbrg.sandbox2049.opentlc.com/repository/sachin-host/</url>
     </mirror>
   </mirrors>
   <profiles>
@@ -38,7 +38,7 @@
        <repository>
          <id>sachin-snap</id>
          <name>your custom repo</name>
-         <url>http://nexus-argocd-pipeline.apps.cluster-t9vdh.t9vdh.sandbox2832.opentlc.com/repository/sachin-snap/</url>
+         <url>http://nexus-argocd-pipeline.apps.cluster-vlbrg.vlbrg.sandbox2049.opentlc.com/repository/sachin-snap/</url>
        </repository>      
      </repositories>
           
@@ -49,7 +49,7 @@
        <repository>
          <id>sachin-snap</id>
          <name>your custom repo</name>
-         <url>http://nexus-argocd-pipeline.apps.cluster-t9vdh.t9vdh.sandbox2832.opentlc.com/repository/sachin-snap/</url>
+         <url>http://nexus-argocd-pipeline.apps.cluster-vlbrg.vlbrg.sandbox2049.opentlc.com/repository/sachin-snap/</url>
        </repository>
      </repositories>
    </profile>
