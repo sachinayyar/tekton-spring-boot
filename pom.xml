@@ -122,11 +122,11 @@
 	<distributionManagement>
         	<snapshotRepository>
           		<id>sachin-snap</id>
-          		<url>http://nexus-argocd-pipeline.apps.cluster-t9vdh.t9vdh.sandbox2832.opentlc.com/repository/sachin-snap/</url>
+          		<url>http://nexus-argocd-pipeline.apps.cluster-vlbrg.vlbrg.sandbox2049.opentlc.com/repository/sachin-host/</url>
         	</snapshotRepository>
         	<repository>
           		<id>sachin-snap</id>
-          		<url>http://nexus-argocd-pipeline.apps.cluster-t9vdh.t9vdh.sandbox2832.opentlc.com/repository/sachin-snap/</url>
+          		<url>http://nexus-argocd-pipeline.apps.cluster-vlbrg.vlbrg.sandbox2049.opentlc.com/repository/sachin-host/</url>
         	</repository>
       
     	</distributionManagement>
