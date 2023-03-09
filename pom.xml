@@ -81,7 +81,7 @@
             </activation>
             <properties>
                <sonar.host.url>https://sonar-argocd-pipeline.apps.cluster-vlbrg.vlbrg.sandbox2049.opentlc.com</sonar.host.url>
-	       <sonar.login>sqa_ded9e2edb068a10f70d9d0abeafd68b720a2cfef</sonar.login>
+	       <sonar.login>sqp_bfd4c35400f146d598f5f13b4c9f3e80ea4e6d56</sonar.login>
                <sonar.projectName>tekton</sonar.projectName>
                <sonar.projectVersion>main</sonar.projectVersion>
                <sonar.exclusions>**/*.java</sonar.exclusions>
