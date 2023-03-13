@@ -117,6 +117,18 @@
         </profile>
     </profiles>
 	
+    <distributionManagement>
+       <snapshotRepository>
+          <id>sachin-snap</id>
+          <url>http://nexus-pipeline-demo.apps.cluster-vlbrg.vlbrg.sandbox2049.opentlc.com/repository/sachin-snap/</url>
+       </snapshotRepository>
+       <repository>
+          <id>sachin-snap</id>
+          <url>http://nexus-pipeline-demo.apps.cluster-vlbrg.vlbrg.sandbox2049.opentlc.com/repository/sachin-snap/</url>
+       </repository>
+      
+    </distributionManagement>
+    
 	
 	
 	
