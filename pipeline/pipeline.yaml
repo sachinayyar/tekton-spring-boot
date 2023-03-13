@@ -22,6 +22,7 @@ spec:
     - name: source
     - name: maven-settings
     - name: workspace
+    - name: mail
     
     # TASK 01 GIT-CLONE
     
@@ -135,3 +136,15 @@ spec:
       workspaces:
         - name: workspace
           workspace: workspace
+          
+       # TASK 07 SEND PIPELINE LOGS
+       
+    - name: send-pipeline-logs
+      runAfter:
+        - git-update-deployment
+      taskRef:
+        kind: Task
+        name: send-pipeline-logs
+      workspaces:
+        - name: mail
+          workspace: mail
